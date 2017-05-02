@@ -9,7 +9,7 @@ GOOGLE_PASSWORD = None # 'yourpassword'
 AUTH_TOKEN      = None # "yyyyyyyyy"
 
 # force the user to edit this file
-if ANDROID_ID == NONE
+if ANDROID_ID == None
     or all([each is None for each in [GOOGLE_LOGIN, GOOGLE_PASSWORD, AUTH_TOKEN]]):
     raise Exception("config.py not updated")
 
