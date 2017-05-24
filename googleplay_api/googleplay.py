@@ -170,8 +170,10 @@ class GooglePlayAPI(object):
             params = {}
             for d in data:
                 if not "=" in d: continue
-                k, v = d.split("=")
-                params[k.strip().lower()] = v.strip()
+                elements = d.split("=")
+                k = elements[0].strip().lower()
+                v = ("=".join(elements[1:])).strip()
+                params[k] = v
             if "auth" in params:
                 #print("Auth-Token found: %s" % params["auth"])
                 self.setAuthSubToken(params["auth"])
