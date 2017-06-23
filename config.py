@@ -2,6 +2,7 @@
 
 from __future__ import unicode_literals
 
+SEPARATOR       = ";"  # character used for field separation of output
 LANG            = "en_US" # can be en_US, fr_FR, ...
 ANDROID_ID      = None # "38c6523ac43ef9e1"
 GOOGLE_LOGIN    = None # 'someone@gmail.com'
